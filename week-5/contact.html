@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reggie's Coffee Shop - Contact</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- This is a HTML comment -->
+    <header>
+        <h1>Reggie's Coffee shop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <table>
+            <caption>Hours of Operation</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon &hyphen; Fri</td>
+                    <td>6 AM &hyphen; 9PM</td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>8 AM &hyphen; 9 PM</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+        <section>
+            <h3>We love to hear from you</h3>
+            <form action="thanks.html" method="get">
+                <div>
+                    <label for="fullname">Your Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Santiago Espinosa" value="Mr.">
+                </div>
+                <!-- Value attribute + "php" -->
+                <div>
+                    <label for="youremail">Email</label>
+                    <input type="email" id="youremail" name="youremail" required>
+                    <!-- "Required" is a boolean attribute, it only needs to be set by its name (by including in your're turning on its function) -->
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div>
+                    <label for="tickets">How many tickets? (sold in pairs)</label>
+                    <input type="number" name="tickets" id="tickets" min="2" max="10" step="2">
+                </div>
+                <div>
+                    <label for="row">Select Row</label>
+                    <select name="row" id="row">
+                        <option value="">Select one</option>
+                        <option value="front">Front Row</option>
+                        <option value="center" selected>Center Row</option>
+                        <option value="back">Black Row</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Have you been here before?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="past" id="yes">
+                    <label for="no">No</label>
+                    <input type="radio" name="past" id="no">
+                </div>
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" name="policies" id="policies">
+                    <label for="policies">I agree with the therms and conditions</label>
+                </div>
+                <button type="submit">sign me up!</button>
+
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Copyright &copy; Reggie&apos;s coffee shop, 2021
+        </p>
+    </footer>
+
+</body>
+
+</html>

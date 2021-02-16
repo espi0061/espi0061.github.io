@@ -1,6 +1,11 @@
+html {
+    font-size: 16px;
+}
+
 body {
     color: darkslategrey;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/white_brick_wall.png");
 }
 
 H1 {
@@ -28,6 +33,8 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px (we use rem to be more dynamic */
 }
 
 /* class name selector */
@@ -38,13 +45,30 @@ nav ul a {
 }
 
 #treatofweek {
-    background-color: orange;
+    /* background-color: orange; */
+    /* color image repeat position */
+    background: darkslategray url("../images/bread.jpg") no-repeat center center;
+    background-size: cover;
+    /* x and y */
+    /* background-position: 100px 50px; */
+    /* background-size: contain; */
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1em;
+    /* 1 x 1.5rem = 1 x 1.5 x 16px = 24px */
+    /* font-size: 24px;
+    padding: 20px; */
+    width: 50%;
+}
+#treatofweek dl ul li {
+    background-color: transparent;
 }
 
 /* Avoid using id for styling, use classes mostly */
 
 .large_text {
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* 1.25 x 16 = 20px */
 }
 
 /* child selector or directv child selector */
@@ -55,7 +79,7 @@ article>p {
     line-height: 1.5;
     text-transform: capitalize;
     text-align: center;
-    letter-spacing: 2px ;
+    letter-spacing: 2px;
     word-spacing: 12px;
     font-style: italic;
 }
@@ -118,11 +142,13 @@ dl ul li:nth-child(odd) {
 body footer {
     background-color: rgb(0, 0, 0);
 }
+
 /* specificity 0001 */
 footer {
-    background-color: #d5836c !important; 
+    background-color: #d5836c !important;
     padding: 20px;
 }
+
 /* specificity 0010 */
 .site_footer {
     background-color: cornflowerblue;
@@ -132,4 +158,3 @@ footer {
 footer.site_footer {
     background-color: rgba(0, 0, 0, 0.2);
 }
-

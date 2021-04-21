@@ -6,6 +6,11 @@ body {
     color: darkslategrey;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../images/white_brick_wall.png");
+    padding-top: 4.5em;
+}
+
+img {
+    max-width: 100%;
 }
 
 H1 {
@@ -29,19 +34,62 @@ nav ul {
     list-style: none;
 }
 
+/* EX 1 - Display and Box sizing */
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin: -3px;
+}
+
 /* descendant selector - multiple levels */
 nav ul a {
     color: darkslategray;
     text-decoration: none;
     font-size: 1.5rem;
     /* 1.5 x 16px = 24px (we use rem to be more dynamic */
+    display: block;
+    text-align: center;
 }
 
 /* class name selector */
 .orange_link {
+    display: inline-block;
+    padding: 1.5em;
+    width: 300px;
     background-color: darkslategray;
     color: orange;
     text-decoration: none;
+    clear: both;
+}
+
+/* float */
+
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, .6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+
+section {
+    /* clearing the float */
+    clear: both;
+}
+
+.orange_link.large_text{
+    position: absolute;
+    right:0;
+    bottom: 0;
 }
 
 #treatofweek {
@@ -54,12 +102,14 @@ nav ul a {
     /* background-size: contain; */
     color: #fff;
     font-size: 1.5rem;
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
     /* 1 x 1.5rem = 1 x 1.5 x 16px = 24px */
     /* font-size: 24px;
     padding: 20px; */
     width: 50%;
+    position: relative;
 }
+
 #treatofweek dl ul li {
     background-color: transparent;
 }
@@ -100,6 +150,16 @@ a[href="#treatofweek"] {
 
 /* Using Pseudo Classes */
 /* Styling Navigation */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
 /* LoVe HAte */
 
 nav ul a,

@@ -85,6 +85,8 @@ section#contact {
     padding: 2rem;
 }
 
+/* form style for mobile layout */
+
 form.contact-form {
     width: 400px;
     background-color: #EBDED5;
@@ -171,6 +173,8 @@ footer {
         width: 768px;
     }
 
+    /* form style for tablet layout */
+
     form.contact-form {
         width: 700px;
     }
@@ -220,6 +224,8 @@ footer {
         width: 1232px;
         margin: 0 auto;
     }
+
+    /* form adjustment for desktop layout */
 
     form.contact-form {
         width: 900px;

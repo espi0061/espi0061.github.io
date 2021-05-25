@@ -67,7 +67,6 @@ main#main {
 section#home {
     background-color: #DEDBD2;
     padding: 2rem;
-    width: 480px;
 }
 
 section#about {
@@ -83,7 +82,7 @@ img.about-image {
 section#contact {
     background-color: #4A5759;
     color: #fff;
-    padding: 2rem;  
+    padding: 2rem;
 }
 
 form.contact-form {
@@ -136,3 +135,100 @@ footer {
 
 /* Tablet Layout */
 
+@media screen and (min-width: 481px) {
+
+    /* Headings and Paragraphs styles for tablet */
+
+    h1.page-title,
+    h2.section-title {
+        font-size: 2.6em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .contact .section-title {
+        font-size: 3.6em;
+    }
+
+    .contact p {
+        font-size: 2.4em;
+    }
+
+    /* nav tablet layout */
+
+    nav#nav {
+        width: 768px;
+    }
+
+    nav.nav .nav-link {
+        font-size: 2em;
+    }
+    /* main tablet layout */
+
+    main#main {
+        width: 768px;
+    }
+
+    form.contact-form {
+        width: 700px;
+    }
+
+    .contact-form-label {
+        font-size: 2em;
+    }
+
+    button {
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    /* adding float to image */
+
+    img.about-image {
+        float: left;
+        width: 300px;
+    }
+
+    /* footer tablet layout*/
+    footer {
+        width: 768px;
+        font-size: 1.2em;
+    }
+}
+
+/* Desktop layout */
+
+@media screen and (min-width: 769px) {
+
+    /* Nav desktop layout */
+
+    nav#nav {
+        width: 1232px;
+        margin: 0 auto;
+    }
+    
+    nav.nav .nav-link {
+        display: inline-block;
+        width: 33%;
+    }
+
+    /* main desktop layout */
+    
+    main#main {
+        width: 1232px;
+        margin: 0 auto;
+    }
+
+    form.contact-form {
+        width: 900px;
+    }
+
+    /* footer desktop layout */
+
+    footer {
+        width: 1232px;
+        margin: 0 auto;
+    }
+}

@@ -67,6 +67,7 @@ main#main {
 section#home {
     background-color: #DEDBD2;
     padding: 2rem;
+    width: 480px;
 }
 
 section#about {

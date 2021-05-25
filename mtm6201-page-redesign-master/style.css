@@ -33,7 +33,7 @@ p {
 
 /* Nav (burger menu) mobile layout */
 nav#nav {
-    max-width: 480px;
+    width: 480px;
     margin: 0;
     padding: 0;
     border: none;
@@ -60,7 +60,7 @@ nav.nav .nav-link:hover {
 /* Main section mobile layout */
 
 main#main {
-    max-width: 480px;
+    width: 480px;
     margin: 0;
 }
 

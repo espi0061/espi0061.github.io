@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&family=Padauk&display=swap');
+
+/* Custom CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Mobile layout */
+
+/* Headings and Paragraphs styles for mobile layout */
+
+h1.page-title,
+h2.section-title {
+    font-family: Noto Sans JP, Arial, Sans-serif;
+    font-size: 2.2em;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    font-family: Padauk, Arial, Sans-serif;
+    font-size: 1.1em;
+}
+
+.contact .section-title {
+    font-size: 3em;
+}
+
+.contact p {
+    font-size: 1.9em;
+}
+
+/* Nav (burger menu) mobile layout */
+nav#nav {
+    max-width: 480px;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    background-color: #F7E1D7;
+}
+
+nav.nav .nav-link {
+    display: block;
+
+    margin: 0;
+    padding: 1.2rem;
+
+    color: inherit;
+    font-family: Noto Sans JP, Arial, Sans-serif;
+    font-weight: 500;
+}
+
+nav.nav .nav-link:hover {
+    text-decoration: underline;
+    background-color: #EBDED5;
+}
+
+/* Main section mobile layout */
+
+main#main {
+    max-width: 480px;
+    margin: 0;
+}
+
+section#home {
+    background-color: #DEDBD2;
+    padding: 2rem;
+}
+
+section#about {
+    background-color: #B0C4B1;
+    padding: 2rem;
+}
+
+img.about-image {
+    float: none;
+    width: 200px;
+}
+
+section#contact {
+    background-color: #4A5759;
+    color: #fff;
+    padding: 2rem;  
+}
+
+form.contact-form {
+    width: 400px;
+    background-color: #EBDED5;
+}
+
+.contact-form-section {
+    margin: 1.3rem 0;
+}
+
+.contact-form-label {
+    color: #000;
+    font-family: Noto Sans JP, Arial, Sans-serif;
+    font-weight: 100;
+}
+
+input {
+    border: none;
+}
+
+textarea {
+    border: none;
+    resize: none;
+}
+
+button {
+    height: 35px;
+    background-color: #4A5759;
+    border: none;
+    border-radius: 4px;
+    font-family: Noto Sans JP, Arial, Sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #B0C4B1;
+}
+
+/* footer mobile layout */
+
+footer {
+    background-color: #F7E1D7;
+    padding: 2rem;
+    width: 480px;
+    font-family: Noto Sand JP, Arial, Sans-serif;
+    font-weight: 300;
+}
+
+/* Tablet Layout */
+

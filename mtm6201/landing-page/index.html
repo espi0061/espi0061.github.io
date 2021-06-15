@@ -14,77 +14,97 @@
 </head>
 
 <body>
-    <div class="external-div">
-        <header>
-            <img src="images/logo/logo.png" alt="Dash logo" class="logo">
-        </header>
-        <main>
-            <section>
-                <div class="call-to-action">
-                    <h1>Want to be your own boss&#63;</h1>
-                    <p>Start today and make up to &#36;30&#47;<abbr title="hour">hr</abbr> driving your own vehicle with
-                        Dash&#33;</p>
-                </div>
-                <div class="main-form-div">
-                    <h2>Apply Now</h2>
-                    <p>enter your info below.</p>
-                    <form action="#" method="get" class="main-form">
-                        <div class="input-form">
-                            <label for="first-name"></label>
-                            <input id="first-name" type="text" name="first-name" placeholder="First name" required>
-                        </div>
-                        <div class="input-main-form">
-                            <label for="last-name"></label>
-                            <input id="last-name" type="text" name="last-name" placeholder="Last name" required>
-                        </div>
-                        <div class="input-main-form">
-                            <label for="email"></label>
-                            <input id="email" type="email" name="email" placeholder="Email address" required>
-                        </div>
-                        <div class="input-main-form">
-                            <label for="phone-number"></label>
-                            <input id="phone-number" type="tel" name="phone-number" placeholder="Phone number" required>
-                        </div>
-                        <div class="checkbox">
-                            <input id="terms-agreement" type="checkbox" name="terms-agreement">
-                            <label for="terms-agreement">I agree to Dash terms&#33;</label>
-                        </div>
-                        <div class="button-1-div">
-                            <button class="button-1" type="submit">Drive with us</button>
-                        </div>
-                    </form>
-                    <div class="paragraph">
-                        <p>already applied&#63; <a href="#">Check your application status here</a></p>
+    <header>
+        <img src="images/logo/logo.png" alt="Dash logo" class="logo">
+    </header>
+    <main>
+        <!-- I add a section tag within the main tag which is going to contain the call-to-action information, the main image, and the main form, and it will work as my parent when using grid to format in css the three previous parts mentioned in this comment. -->
+        <section class="main-section">
+            <!-- I add a div who's going to contain h1 and a p with call-to-action information. This div is going to work as my first child on the grid. -->
+            <div class="call-to-action">
+                <h1>Want to be your own boss&#63;</h1>
+                <p>Start today and make up to &#36;30&#47;<abbr title="hour">hr</abbr> driving your own vehicle with
+                    Dash&#33;</p>
+            </div>
+            <!-- I add a div who's going to contain the main image. This div is going to work as my second child on the grid. -->
+            <div class="scooter1">
+                <img src="images/bg-image/scooter.svg" alt="scooter">
+            </div>
+            <!-- I add a div who contains the main form and h2 and a p who have information relating to the form. This div is going to work as my third child on the grid. Additionally, this div will allow me to customize the whole area of the main form, and h2 and the p previously mentioned, since that area has its own style on the mockup.  -->
+            <div class="main-form-div">
+                <h2>Apply Now</h2>
+                <p>Enter your info below.</p>
+                <form action="#" method="get" class="main-form">
+                    <div class="input-main-form-div">
+                        <label for="first-name"></label>
+                        <input class="input-main-form" id="first-name" type="text" name="first-name"
+                            placeholder="First name" required>
                     </div>
+                    <div class="input-main-form-div">
+                        <label for="last-name"></label>
+                        <input class="input-main-form" id="last-name" type="text" name="last-name"
+                            placeholder="Last name" required>
+                    </div>
+                    <div class="input-main-form-div">
+                        <label for="phone-number"></label>
+                        <input class="input-main-form" id="phone-number" type="tel" name="phone-number"
+                            placeholder="Phone number" required>
+                    </div>
+                    <div class="input-main-form-div">
+                        <label for="email"></label>
+                        <input class="input-main-form" id="email" type="email" name="email" placeholder="Email address"
+                            required>
+                    </div>
+                    <div class="checkbox-div">
+                        <input id="terms-agreement" type="checkbox" name="terms-agreement">
+                        <span>I agree to Dash terms</span>
+                    </div>
+                    <div class="button-1-div">
+                        <button class="button-1" type="submit">Drive with us</button>
+                    </div>
+                </form>
+                <div class="paragraph">
+                    <p>Already applied&#63; <a href="#">Check your application status here</a></p>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-div">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- I add a div containing the footer form and the social media icons so that it can behave as parent in flex in order to customize the footer layout according to the desktop mockup -->
+        <div class="footer-div">
+            <!-- I add a div containing h3, the footer's p and the footer's form so that together they can form my first child within flex. -->
+            <div class="footer-desktop-flex">
                 <h3>See how much you can ear with Dash.</h3>
                 <p>How many hours do you want to drive with us this week&#63;</p>
                 <form action="#" method="get" class="footer-form">
-                    <div class="input-footer input-hours">
-                        <label for="hours"></label>
-                        <input id="hours" type="text" name="hours" placeholder="Hours">
-                    </div>
-                    <div class="input-footer input-city">
-                        <label for="location"></label>
-                        <input id="location" type="text" name="location" placeholder="City">
-                    </div>
-                    <div class="button-2-div">
-                        <button class="button-2" type="submit">Calculate</button>
+                    <!-- I add a div so that it can behave as my flex parent when wanting to customize the footer's form according to the layout provided. -->
+                    <div class="form-area">
+                        <!-- I add a div containing input and label 1 so that it behaves as my first child on form's flex-->
+                        <div class="input-1">
+                            <label for="hours"></label>
+                            <input id="hours" type="text" name="hours" placeholder="Hours">
+                        </div>
+                        <!-- I add a div containing input and label 2 so that it behaves as my second child on form's flex-->
+                        <div class="input-city">
+                            <label for="location"></label>
+                            <input id="location" type="text" name="location" placeholder="City">
+                        </div>
+                        <!-- I add a div containing the footer's form button so that it behaves as my third child on form's flex-->
+                        <div class="button-2-div" id="button2">
+                            <button class="button-2" type="submit">CALCULATE</button>
+                        </div>
                     </div>
                 </form>
-                <div class="icons">
-                    <img src="images/icons/facebook.svg" alt="Facebook icon">
-                    <img src="images/icons/instagram.svg" alt="Instagram icon">
-                    <img src="images/icons/twitter.svg" alt="Twitter icon">
-                    <img src="images/icons/linkedin.svg" alt="LinkedIn icon">
-                </div>
             </div>
-        </footer>
-    </div>
+            <!-- I add a div containing the social media icons so that together they can behave as my second child on flex. Additionally, this div will also be set as parent of an inner flex to customize and organize each icon according to the provided layouts. -->
+            <div class="icons">
+                <img src="images/icons/facebook.svg" alt="Facebook icon">
+                <img src="images/icons/instagram.svg" alt="Instagram icon">
+                <img src="images/icons/twitter.svg" alt="Twitter icon">
+                <img src="images/icons/linkedin.svg" alt="LinkedIn icon">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

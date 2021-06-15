@@ -51,38 +51,288 @@ table {
 
 /* CUSTOM CSS */
 
+/* I add box-sizing: border-box; to the whole document so that when I add padding and border to a box, those values remain within width and height specifications (this to prevent issues when sizing)  */
 * {
     box-sizing: border-box;
 }
 
+/* I add max-width: 100% to all images so that they get their parent element's size at the most (this to make images responsive)*/
 img {
     max-width: 100%;
 }
 
+/* I add font-size: 14px; to html tag to make it my root's font size. I did so since I am going to work mainly with em and rem and 14px will be my reference point */
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    color: #333131;
 }
 
+/* I add line-height to the body tag so that all my text lines will have a height of the source sizex1.25 (this to make the website more legible) */
 body {
-    line-height: 1.5;
+    line-height: 1.25;
     background-color: #f7f7ff;
-    background-image: url(../images/bg-image/scooter.svg);
-    background-repeat: no-repeat;
-    background-size: 70%;
+}
+
+header,
+main,
+footer {
+    padding: 0 2rem;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+
+.scooter1 {
+    width: 50%;
+    /* I added the auto value so that my image is centered horizontally */
+    margin: .8rem auto;
+}
+
+.call-to-action p {
+    font-size: 1rem;
+}
+
+.main-form-div p {
+    font-size: 1rem;
+}
+
+.main-form-div .paragraph p {
+    font-size: 1rem;
+}
+
+.footer-div p {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+ 
+abbr {
+    text-decoration: none;
+}
+
+.logo {
+    width: 10%;
+}
+
+.main-form-div {
+    background-color: #fff;
+    border-radius: 30px;
+    /* In box-shadow I added 9px to move my shadow to the right, 11px to move it to the bottom, 30px set how much blur I wanted, and -10px to set the spread of the blur I set it negative so that the blur could be softer. */
+    box-shadow: 9px 11px 30px -10px; 
+    margin: 3rem 0 4rem 0;
+    padding: 1.8rem; 
+}
+
+.input-main-form-div {
+    margin: 1rem 0;
+}
+
+.input-main-form {
+    font-size: 1.25rem;
+    background-color: #F4F4F5;
+    border: none;
+    border-radius: 15px;
+    padding: .8em 0 .8em .8em;
+    width: 100%;
+}
+
+.input-main-form::placeholder {
+    font-size: 1.25rem;
+    color: #9B9B9B;
+}
+
+
+span {
+    font-size: 1.25rem;
+}
+
+.button-1-div {
+    margin: 1.3rem 0;
+}
+
+.button-1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #57eeab;
+    border: none;
+    border-radius: 15px; 
+    padding: .6em 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #FF8480;
 }
 
 footer {
     background-color: #fffd8c;
 }
 
-.external-div {
-    margin: 0 2rem;
+/* I added display: flex; to form-area to customize and be able to move and control the footer's form inputs to match the layout provided */
+.form-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
 }
-.logo {
-    width: 30%;
+
+.form-area input {
+    padding: .6em;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    color: #707070;
+    margin: .6rem 0;
+}
+
+.footer-div {
+    padding: 1rem 0;
+}
+
+/* I use flex-basis in each of .form-area children to control their sizes and make sure each input and button fits their proper position. The calc() value helps me arrange better the amount of space each element should have so that they don't start moving to the next line due to a lack of space. Elements would start going to the next line as space lack since I used flex-wrap: wrap; in .form-area which is the flex parent.*/
+.form-area div:nth-child(1) {
+    flex-basis: calc(30% - .7rem);
+    margin-right: .7rem;
+}
+
+.form-area div:nth-child(2) {
+    flex-basis: calc(70% - .7rem);
+    margin-right: .7rem;
+}
+
+.form-area div:nth-child(3) {
+    flex-basis: 100%;
+    margin-right: .7rem; 
+}
+
+.button-2-div button {
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: 700;
+    background-color: #ff8480;
+    padding: .6em;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin: .6rem 0;
+}
+
+/* I use display: flex; in .icons to be able to move the social media icons to fit the layouts provided. */
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: .7rem;
+}
+
+.icons img {
+    margin:0 auto;
+}
+
+/* I add @media with min-width: 768px so that I can develop the required changes to fit the iPad layout provided which will display once the screen size reaches 768px */
+@media screen and (min-width: 768px) {
+
+    .paragraph {
+        text-align: center;
+    }
+
+    .form-area div:nth-child(1) {
+        flex-basis: calc(20% - 1.43rem);
+    }
+
+    .form-area div:nth-child(2) {
+        flex-basis: calc(30% - 1.43rem);
+    }
+
+    .form-area div:nth-child(3) {
+        flex-basis: calc(50% - 1.43rem);
+    }
+
+    .icons img {
+        margin:0 2.5rem;
+    }
+
+}
+
+/* I add @media with min-width: 1080px so that I can develop the required changes to fit the desktop layout provided which will display once the screen size reaches 1080px */
+@media screen and (min-width: 1080px) {
+
+    header {
+        margin-bottom: 6rem;
+    }
+
+    main { 
+        margin:0 1.9rem 5.5rem 1.9rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .call-to-action p {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        margin-left: 3rem;
+    }
+
+    .scooter1 { 
+        width: 53.6rem;
+    }
+
+    .footer-div {
+        margin:0 3rem;
+    }
+
+    /* I add display: grid; to .main-section to be able to move the main information, the main image, and the main form so that they fit the desktop layout provided.*/
+    .main-section {
+        display: grid;
+        /* I used grid-template-areas to set where I want each element to locate at within my grid. */
+        grid-template-areas: 
+        'text img form';
+        grid-gap: 1rem;
+    }
+
+    /* I set a grid-area to each element who is going to be alocated within the grid. */
+    .main-section .call-to-action {
+        grid-area: text;
+    }
+
+    .main-section .scooter1 {
+        grid-area: img;
+    }
+
+    .main-section .main-form-div {
+        grid-area: form;
+    }
+
+    /* I add display: flex; to .footer-div so that I can set my footer's form to the left side and my icons to the right side of my footer in desktop layout. */
+    .footer-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-desktop-flex {
+        flex-basis: 40%;
+    }
+
+    .icons {
+        flex-basis: 10%;
+    }
 }

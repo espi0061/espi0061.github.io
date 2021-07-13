@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcsaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -95,16 +95,13 @@ ul {
     list-style: none;
 }
 
-.logo {
-    grid-area: logo;
-    padding-left: 1.2em;
-}
-
+/* the animation property was set to animate the logo when hovered (to change its shape in different ways at different times */
 .logo img:hover {
     animation: logo 1s ease-in-out;
     animation-iteration-count: infinite;
   }
   
+  /* the keyframes control what happens in certain fraction of the time stablished in the animation property. It is connected to the animation through a name. In this case is logo */
   @keyframes logo {
     20% {
         transform:rotate(.5turn);
@@ -138,10 +135,12 @@ ul {
     }
   }
 
+  /* display:grid is applied on the header to control where the logo, the nav, and the header icons are going to be located at according to the layout established */
 header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: .4fr 1fr;
+    /* grid-template-areas specify what area is going to be occupied by certain element within the grid */
     grid-template-areas: 
     '. logo icons'
     'nav nav nav';
@@ -149,10 +148,17 @@ header {
 }
 
 nav {
+    /* grid-area gives a label to an element who's going to be used in grid-template-areas */
     grid-area: nav;
     margin-top: 1rem;
 }
 
+.logo {
+    grid-area: logo;
+    padding-left: 1.2em;
+}
+
+/* Display: flex; was applied to .header-icons to control the layout of the header icons */
 .header-icons {
     grid-area: icons;
     display: flex;
@@ -205,6 +211,7 @@ footer p {
     margin-bottom: 1.8rem;
 }
 
+/* display: flex; was applied to .social-media-icons to control the way social media icons within the footer are displayed */
 .social-media-icons {
     display: flex;
     justify-content: center;
@@ -212,6 +219,7 @@ footer p {
     font-size: 1.5rem;
 }
 
+/* I add @media with min-width: 768px so that I can develop the required changes to fit a tabley layout which will display once the screen size reaches 768px */ 
 @media screen and (min-width: 768px) {
     a {
         background-color: transparent;
@@ -294,6 +302,7 @@ footer p {
     }
 }
 
+/* I add @media with min-width: 1080px so that I can develop the required changes to fit a desktop layout which will display once the screen size reaches 1080px */
 @media screen and (min-width: 1080px) {
     a{
         font-size: 2rem;

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:wght@600;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET */
+
+/* CUSTOM CSS */
+
+  * {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+main p {
+    margin-bottom: 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+    font-weight:600;
+    background-color: rgba(255, 255, 255, 0.47);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: .4em 0;
+}
+
+header {
+    background-color: #EF4767;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .4fr 1fr;
+    grid-template-areas: 
+    '. logo icons'
+    'nav nav nav';
+    padding-top: .5rem;
+}
+
+.logo {
+    grid-area: logo;
+    padding-left: 1.2em;
+}
+
+nav {
+    grid-area: nav;
+    margin-top: 1rem;
+}
+
+.header-icons {
+    grid-area: icons;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.fas {
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+.border {
+    width: 90%;
+    margin: auto;
+}
+
+.quote {
+    background-color: #0B758A;
+    padding: 2.5em;
+    text-align: center;
+    color: white;
+}
+
+.fas,
+blockquote,
+cite {
+    margin-bottom: 2rem;
+}
+
+.our-team-container {
+    text-align: center;
+    background-color: #FED23E;
+    padding: 1em 1em .5em 1em;
+    margin: 2rem 0;
+}
+
+.employee-image-container img{
+    clip-path: circle();
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: .5em 0;
+}
+
+footer p {
+    margin-bottom: 1.8rem;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}

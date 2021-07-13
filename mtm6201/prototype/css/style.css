@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:wght@600;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET */
+
+/* CUSTOM CSS */
+
+  * {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-image: url('../images/cookies-2294706_1920@2x.jpg');
+    background-size: 100%;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    font-size: 2rem;
+    font-weight:600;
+    background-color: rgba(255, 255, 255, 0.47);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: .4em 0;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .4fr 1fr;
+    grid-template-areas: 
+    '. logo icons'
+    'nav nav nav';
+    margin-top: .5rem;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+.logo {
+    grid-area: logo;
+    padding-left: 1.2em;
+}
+
+nav {
+    grid-area: nav;
+    margin-top: 1rem;
+}
+
+.header-icons {
+    grid-area: icons;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fas {
+    font-size: 1.3rem;
+}
+
+.home-image {
+    background-color: black;
+    width: 370px;
+    margin: .5rem auto;
+    padding: .3em 0 0 .3em;
+    height: 250px;
+}
+
+.home-image img {
+    width: 360px;    
+}
+
+.home-image-text-container {
+    background-color: rgba(0, 0, 0, 0.47);
+    position: relative;
+    bottom: 66px;
+    padding: 1em 0;
+}
+
+.home-image-text-container p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: .5em 0;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 1.8rem;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}

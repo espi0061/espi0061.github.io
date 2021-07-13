@@ -105,6 +105,25 @@ a {
     padding: .4em 0;
 }
 
+.logo img:hover {
+    animation: logo 1s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes logo {
+    20% {
+     transform: scale(2);
+    }
+    
+    40% {
+      transform: scale(1);
+    }
+       
+    80% {
+      transform: translate(100px, 100px);
+    }
+  }
+
 header {
     background-color: #EF4767;
     display: grid;

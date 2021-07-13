@@ -160,6 +160,10 @@ section {
     margin-bottom: 2rem;
 }
 
+.quote {
+    margin-bottom: 2rem;
+}
+
 .border {
     width: 90%;
     margin: auto;
@@ -187,7 +191,7 @@ cite {
 }
 
 .employee-image-container img {
-    clip-path: circle();
+    clip-path: circle(100px);
 }
 
 .employee-image-container-1 img {

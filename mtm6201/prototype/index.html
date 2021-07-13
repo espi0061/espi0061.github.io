@@ -11,10 +11,13 @@
 </head>
 
 <body>
+    <!-- The header works as the grid parent for the the different layouts regarding the logo, nav, and header icons -->
     <header>
+        <!-- I added this div wrapping the logo to act as the first child of the header grid -->
         <div class="logo">
             <img src="images/logo.png" alt="Mood Cream Logo">
         </div>
+        <!-- The nav, which contains all the navigation links, in this scenario works as the second child  of the header grid -->
         <nav>
             <ul>
                 <li><a class="home" href="#">Home</a></li>
@@ -23,6 +26,8 @@
                 <li><a class="contact" href="contact-us.html">Contact Us</a></li>
             </ul>
         </nav>
+        <!-- I added this div containing the header icons to work as the third child of the header grid -->
+        <!-- Additionally, this div also works as a flex parent since display: flex; will be applied to move the children icons to develop the layout desired -->
         <div class="header-icons">
             <i class="fas fa-shopping-cart"></i>
             <i class="fas fa-user-alt"></i>
@@ -30,14 +35,18 @@
         </div>
     </header>
     <main>
-        <section>
+        <!-- The div with a class of section behaves as the grid parent who contains the main images and text from the home page. This grid will allow to display images in two and three columns -->
+        <div class="section">
+            <!-- The outer links within the section tag behave as grid children and group all the relevant information that should be placed alonside the layout together -->
             <div class="home-image home-image-1">
+                <!-- The srcset attribute is used in img tags to group a related set of images with different sizes to optimize the web site -->
                 <img srcset="images/img-1-320.png 320w,
                         images/img-1-480.png 480w,
                         images/img-1-720.png 720w,
                         images/img-1-960.png 960w,
                         images/img-1-1200.png 1200w" sizes="(min-width:1200px) 50vw, 100vw" src="images/img-1.jpg"
                     alt="Man holding an ice cream cone">
+                    <!-- the inner divs within the section tags are mainly used to customize the text and its background  -->
                 <div class="home-image-text-container">
                     <p>Lorem Ipsum dolor sit amet</p>
                 </div>
@@ -97,12 +106,13 @@
                     <p>Lorem Ipsum dolor sit amet</p>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <p>&copy; Copyright 2021-2023 Espinosa - All Rights Reserved</p>
         <p>Privacy Policy</p>
         <p>Site Terms & Conditions</p>
+      <!-- This div is a flex parent who has the function of distributing the icons accordingly to the layout -->
         <div class="social-media-icons">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-instagram"></i>

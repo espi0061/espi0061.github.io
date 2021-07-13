@@ -53,19 +53,24 @@ table {
 
 /* CUSTOM CSS */
 
+/* I stated box-sizing: border-box; to the whole document so that when I add padding and border to a box, the box does not add up pixels or sizes in general (this to prevent issues when sizing)  */
   * {
     box-sizing: border-box;
 }
 
+/* I add max-width: 100% to all images so that they get their parent element's size at the most (this to make images responsive)*/
 img {
     max-width: 100%;
 }
 
+/* I add font-size: 16px; to html tag to make it my root's font size. I did so since I am going to work mainly with em and rem and 16px will be my reference point */
 html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
 
+
+/* I add line-height to the body tag so that all my text lines will have a height of the source sizex1.5 hence my website will be more legible) */
 body {
     background-image: url('../images/cookies-2294706_1920@2x.jpg');
     background-size: 100%;
@@ -254,7 +259,7 @@ footer p {
         font-size: 1.2rem;
     }
 
-    section {
+    .section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -299,7 +304,7 @@ footer p {
         font-size: 1.6rem;
     }
 
-    section {
+    .section {
         margin-top: 5rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);

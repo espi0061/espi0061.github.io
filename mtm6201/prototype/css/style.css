@@ -168,3 +168,121 @@ footer p {
     justify-content: space-evenly;
     font-size: 1.5rem;
 }
+
+@media screen and (min-width: 768px) {
+    a {
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    header {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'logo nav icons';
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'a1 a2 a3 a4';
+    }
+
+    .home {
+        grid-area: a1;
+    }
+
+    .ice-cream {
+        grid-area: a2;
+    }
+
+    .about {
+        grid-area: a3;
+    }
+
+    .contact {
+        grid-area: a4;
+    }
+    .header-icons {
+        flex-direction: row;
+        align-items: initial;
+    }
+
+    .fas {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        'img1 img2'
+        'img3 img4'
+        'img5 img6';
+    }
+
+    .home-image-1 {
+        grid-area: img1;
+    }
+
+    .home-image-2 {
+        grid-area: img2;
+    }
+
+    .home-image-3 {
+        grid-area: img3;
+    }
+
+    .home-image-4 {
+        grid-area: img4;
+    }
+
+    .home-image-5 {
+        grid-area: img5;
+    }
+
+    .home-image-6 {
+        grid-area: img6;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    a{
+        font-size: 2rem;
+    }
+
+    .fas {
+        margin-top: 2.5rem;
+        font-size: 1.6rem;
+    }
+
+    section {
+        margin-top: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        'img1 img2 img3'
+        'img4 img5 img6';
+        row-gap: 3rem;
+    }
+
+    .home-image {
+        width: 300px;
+        margin: .5rem auto;
+        padding: .3em 0 0 .3em;
+        height: 204px;
+    }
+    
+    .home-image img {
+        width: 290px;    
+    }
+    
+    footer {
+        margin-top: 6rem;
+    }
+}

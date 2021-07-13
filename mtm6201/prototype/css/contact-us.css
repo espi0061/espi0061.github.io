@@ -243,3 +243,102 @@ td {
     padding: .3em .5em;
     background-color: #0B758A;
 }
+
+@media screen and (min-width: 768px) {
+    a {
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    header {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'logo nav icons';
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'a1 a2 a3 a4';
+    }
+
+    .home {
+        grid-area: a1;
+    }
+
+    .ice-cream {
+        grid-area: a2;
+    }
+
+    .about {
+        grid-area: a3;
+    }
+
+    .contact {
+        grid-area: a4;
+    }
+    .header-icons {
+        flex-direction: row;
+        align-items: initial;
+    }
+
+    .fas {
+        margin-top: 2.1rem;
+        font-size: 1.2rem;
+    }
+
+    .div-contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'email phone';
+    }
+
+    .email-container {
+        grid-area: email;
+    }
+
+    .phones-container {
+        grid-area: phone;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    a {
+        font-size: 2rem;
+    }
+
+    .fas {
+        margin-top: 2.5rem;
+        font-size: 1.6rem;
+    }
+
+    .sections-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'contact location';
+    }
+
+    .contact-info {
+        grid-area: contact;
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    form {
+        margin-bottom: 4rem;
+    }
+}

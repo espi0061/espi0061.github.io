@@ -168,10 +168,28 @@ cite {
     background-color: #FED23E;
     padding: 1em 1em .5em 1em;
     margin: 2rem 0;
+    width: 380px;
 }
 
-.employee-image-container img{
+.employee-image-container img {
     clip-path: circle();
+}
+
+.employee-image-container-1 img {
+    width: 310px;
+}
+
+.employee-image-container-2 img{
+    width: 370px;
+}
+
+.employee-image-container-4 img{
+    width: 380px;
+}
+
+.employee-image-container-4 img {
+    width: 230px;
+    margin-bottom: -2rem;
 }
 
 footer {
@@ -190,4 +208,118 @@ footer p {
     justify-content: center;
     justify-content: space-evenly;
     font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    a {
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    header {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'logo nav icons';
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'a1 a2 a3 a4';
+    }
+
+    .home {
+        grid-area: a1;
+    }
+
+    .ice-cream {
+        grid-area: a2;
+    }
+
+    .about {
+        grid-area: a3;
+    }
+
+    .contact {
+        grid-area: a4;
+    }
+    .header-icons {
+        flex-direction: row;
+        align-items: initial;
+    }
+
+    .fas {
+        margin-top: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .grid-our-team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        'con1 con2'
+        'con3 con4';
+        column-gap: 2rem;
+    }
+
+    .our-team-container {
+        width: 340px;
+    }
+    .our-team-container-1 {
+        grid-area: con1;
+    }
+
+    .our-team-container-2 {
+        grid-area: con2;
+    }
+
+    .our-team-container-3 {
+        grid-area: con3;
+    }
+
+    .our-team-container-4 {
+        grid-area: con4;
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+    a {
+        font-size: 2rem;
+    }
+
+    .fas {
+        margin-top: 2.5rem;
+        font-size: 1.6rem;
+    }
+
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'p img';
+        column-gap: 3rem;
+    }
+
+    .div-about-us {
+        grid-area: p;
+    }
+
+    .div-img-about-us {
+        grid-area: img;
+    }
+
+    .grid-our-team {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'con1 con2 con3 con4';
+    }
+
 }

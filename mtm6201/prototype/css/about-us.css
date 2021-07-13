@@ -112,16 +112,12 @@ a {
   
   @keyframes logo {
     20% {
-     transform: scale(2);
-    }
-    
-    40% {
-      transform: scale(1);
-    }
-       
+        transform:rotate(.5turn);
+       }
+           
     80% {
-      transform: translate(100px, 100px);
-    }
+         transform: rotate(1turn);
+       }
   }
 
 header {

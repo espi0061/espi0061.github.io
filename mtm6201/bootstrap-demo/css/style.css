@@ -1,0 +1,21 @@
+body {
+    background-color: #369;
+}
+
+.container {
+    background-color: #fff;
+}
+
+.col, 
+[class^=col-] {
+    background-color: #ccc;
+}
+
+.testimonial [class^=col-] {
+    background-color: #900;
+    text-align: center;
+}
+
+.products {
+    background-color: bisque;
+}

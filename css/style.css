@@ -1307,4 +1307,8 @@ textarea::placeholder {
     .input span {
         right: 210px;
     }
+
+    .tr-ph-blogs__card a {
+        width: 50%;
+    }
 }

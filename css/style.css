@@ -1,0 +1,1310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #FB5012;
+    --secondary-color: #000000;
+    --tertiary-color: #fff;
+    --outer-margin: auto;
+    --outer-container-size: 80%;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+    margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+    display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+    background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+    font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+    display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+    display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+    display: none;
+}
+
+/* CSS NORMALIZE */
+
+/* CUSTOM CSS */
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+    width: var(--outer-container-size);
+    margin: var(--outer-margin);
+}
+
+h5,
+h5 a {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+header {
+    padding-top: 2em;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: .5em;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    background-color: rgba(103, 128, 159, .3);
+}
+
+.about-me,
+.featured-portfolio-section {
+    width: var(--outer-container-size);
+    margin: var(--outer-margin);
+    margin-bottom: 4rem;
+}
+
+.featured-portfolio__card {
+    margin-bottom: 2rem;
+}
+
+.featured-portfolio__img {
+    margin-bottom: -.47rem;
+    width: 100%;
+}
+
+.featured-portfolio__likes,
+.featured-portfolio__comments,
+.featured-portfolio__share,
+.photography-blog-grid__likes,
+.photography-blog-grid__comments,
+.photography-blog-grid__share {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.featured-portfolio__likes,
+.featured-portfolio__comments {
+    margin-right: 1.7rem;
+}
+
+.featured-portfolio__share,
+.photography-blog-grid__share,
+.photography-blog-grid__comments,
+.photography-blog-grid__share {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 4rem;
+}
+
+.featured-portfolio__text {
+    padding: 1.5em 3em;
+    background-color: var(--secondary-color);
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.home-blogs-section,
+.h1--portfolio,
+.services,
+aside section,
+.travel-blog-grid,
+.photography-blog-grid,
+.contact-main,
+.blogs {
+    margin: var(--outer-margin);
+    width: var(--outer-container-size);
+}
+
+.home-blogs__card {
+    margin-bottom: 6rem;
+}
+
+.home-blogs__h3,
+.photography-blog-grid__text h2 {
+    color: var(--primary-color)
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 3em 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+        "contact categories"
+        "icons categories";
+    column-gap: 3rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.contact-me-footer {
+    grid-area: contact;
+}
+
+.categories-footer {
+    grid-area: categories;
+}
+
+.social-media-icons-footer {
+    grid-area: icons;
+}
+
+footer ul li a,
+footer p {
+    font-size: .8rem;
+}
+
+.contact-me-footer__p1 {
+    margin-bottom: 0;
+}
+
+.contact-me-footer__p2 {
+    margin-top: 0;
+}
+
+footer i {
+    margin: .85rem .3rem 0;
+}
+
+.services__h2 {
+    color: var(--primary-color);
+    font-size: 2.3rem;
+}
+
+.h2--display-none {
+    display: none;
+}
+
+.portfolio__text-div {
+    background-color: var(--secondary-color);
+    padding: 3em;
+    margin-bottom: .5rem;
+}
+
+.portfolio__text-div p {
+    color: var(--tertiary-color);
+}
+
+.portfolio__h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.social-media-icons-portfolio__icons-div {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.social-media-icons-portfolio__icons-div i {
+    font-size: 1.5rem;
+    margin: 0 .3rem;
+}
+
+.blog-article {
+    background-image: url("../images/background-blogs.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.h1--orange,
+.tr-ph-blogs__h2 {
+    color: var(--primary-color);
+}
+
+.tr-ph-blogs__h2 {
+    text-align: left;
+}
+
+.blogs__h2,
+.tr-ph-blogs__card p {
+    color: var(--tertiary-color);
+}
+
+.tr-ph-blogs__card {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: none;
+}
+
+input,
+textarea {
+    width: 100%;
+    position: relative;
+    padding: .6em;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+
+textarea {
+    height: 300px;
+}
+
+.input {
+    margin-bottom: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--primary-color);
+}
+
+.input span {
+    color: var(--primary-color);
+    position: absolute;
+    right: 80px;
+}
+
+.icon1 {
+    top: 459px;
+}
+
+.icon2 {
+    top: 529px;
+}
+
+.icon3 {
+    top: 596px;
+}
+
+.icon4 {
+    top: 665px;
+}
+
+.input span i {
+    font-size: 1.3rem;
+}
+
+.btn-form {
+    border: none;
+}
+
+.contact-info-email,
+.contact-info-phone {
+    text-align: center;
+}
+
+.contact-info-email p,
+.contact-info-phone p {
+    font-size: 1.7rem;
+}
+
+.photography-blog-grid__card1 {
+    background-image: url("../images/bg-blog-travel.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+    height: 300px;
+    padding: .1em 3em 0;
+    margin-bottom: 5rem;
+}
+
+.photography-blog-grid__card1 h2 {
+    text-align: left;
+}
+
+.photography-blog-grid__card h2 {
+    text-align: left;
+    margin-top: -2rem;
+    font-size: 1.8rem;
+}
+
+.photography-blog-grid__card {
+    margin-bottom: 5rem;
+}
+
+.photography-blog-grid__card img {
+    width: 100%;
+}
+
+.photography-blog-grid__text,
+.photography-blog-grid__icons {
+    margin: 3rem;
+}
+
+.photography-blog-grid__icons {
+    margin-top: -2rem;
+}
+
+.travel-blog-grid__card1 {
+    background-image: url("../images/travel-blog-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card2 {
+    background-image: url("../images/travel-blog-2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card3 {
+    background-image: url("../images/travel-blog-3.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card4 {
+    background-image: url("../images/travel-blog-4.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card5 {
+    background-image: url("../images/travel-blog-5.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card6 {
+    background-image: url("../images/travel-blog-6.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card7 {
+    background-image: url("../images/travel-blog-7.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card8 {
+    background-image: url("../images/travel-blog-8.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card9 {
+    background-image: url("../images/travel-blog-9.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card10 {
+    background-image: url("../images/travel-blog-10.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card11 {
+    background-image: url("../images/travel-blog-11.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card12 {
+    background-image: url("../images/travel-blog-12.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--tertiary-color);
+}
+
+.travel-blog-grid__card {
+    padding: 2em;
+    margin-bottom: 3rem;
+}
+
+.travel-blog-grid__card h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.travel-blog-grid__share {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    margin-left: 4rem;
+}
+
+.travel-blog-grid__likes,
+.travel-blog-grid__comments {
+    margin-right: 2.5rem;
+}
+
+.travel-blog-grid__card h2 {
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 481px) {
+
+    header {
+        margin: var(--outer-margin);
+        width: var(--outer-container-size);
+    }
+
+    nav ul {
+        background-color: var(--tertiary-color);
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    nav ul li a {
+        color: var(--primary-color);
+        font-size: 1.3rem;
+    }
+
+    nav img {
+        width: 100px;
+        height: 20px;
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .featured-portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr .5fr;
+        grid-template-areas:
+            "flower horse"
+            "puppy ducks";
+        grid-column-gap: 2rem;
+    }
+
+    .featured-portfolio__card1 {
+        grid-area: flower;
+    }
+
+    .featured-portfolio__card2 {
+        grid-area: horse;
+    }
+
+    .featured-portfolio__card3 {
+        grid-area: puppy;
+    }
+
+    .featured-portfolio__card4 {
+        grid-area: ducks;
+    }
+
+    .featured-portfolio__text {
+        padding: 1.5em;
+    }
+
+    .featured-portfolio__share {
+        margin-left: 1.5rem;
+    }
+
+    h4 {
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "contact categories icons";
+    }
+
+    .portfolio-images {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, .5fr);
+        grid-template-areas:
+            "img1 img2 img2"
+            "img3 img4 img5"
+            "img3 img6 img7";
+        margin: var(--outer-margin);
+        width: var(--outer-container-size);
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-images__img1 {
+        grid-area: img1;
+    }
+
+    .portfolio-images__img2 {
+        grid-area: img2;
+    }
+
+    .portfolio-images__img3 {
+        grid-area: img3;
+    }
+
+    .portfolio-images__img4 {
+        grid-area: img4;
+    }
+
+    .portfolio-images__img5 {
+        grid-area: img5;
+    }
+
+    .portfolio-images__img6 {
+        grid-area: img6;
+    }
+
+    .portfolio-images__img7 {
+        grid-area: img7;
+    }
+
+    .tr-ph-blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "travel ph";
+        grid-column-gap: 2rem;
+    }
+
+    .tr-ph-blogs__card1 {
+        grid-area: travel;
+    }
+
+    .tr-ph-blogs__card2 {
+        grid-area: ph;
+    }
+
+    .tr-ph-blogs h2 {
+        font-size: 2rem;
+    }
+
+    .tr-ph-blogs__card a {
+        font-size: 1.3rem;
+    }
+
+    .tr-ph-blogs__card1 p {
+        margin-bottom: 2.5rem;
+    }
+
+    .input span {
+        right: 110px;
+    }
+
+    .icon1 {
+        top: 257px;
+    }
+
+    .icon2 {
+        top: 325px;
+    }
+
+    .icon3 {
+        top: 395px;
+    }
+
+    .icon4 {
+        top: 462px;
+    }
+
+    .travel-blog-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, .5fr);
+        grid-template-areas:
+            "blog1 blog2"
+            "blog3 blog4"
+            "blog5 blog6"
+            "blog7 blog8"
+            "blog9 blog10"
+            "blog11 blog12";
+        grid-column-gap: 2rem;
+    }
+
+    .travel-blog-grid__card1 {
+        grid-area: blog1;
+    }
+
+    .travel-blog-grid__card2 {
+        grid-area: blog2;
+    }
+
+    .travel-blog-grid__car3 {
+        grid-area: blog3;
+    }
+
+    .travel-blog-grid__card4 {
+        grid-area: blog4;
+    }
+
+    .travel-blog-grid__card5 {
+        grid-area: blog5;
+    }
+
+    .travel-blog-grid__card6 {
+        grid-area: blog6;
+    }
+
+    .travel-blog-grid__card7 {
+        grid-area: blog7;
+    }
+
+    .travel-blog-grid__card8 {
+        grid-area: blog8;
+    }
+
+    .travel-blog-grid__card9 {
+        grid-area: blog9;
+    }
+
+    .travel-blog-grid__card10 {
+        grid-area: blog10;
+    }
+
+    .travel-blog-grid__card11 {
+        grid-area: blog11;
+    }
+
+    .travel-blog-grid__card12 {
+        grid-area: blog12;
+    }
+
+    .travel-blog-grid__card h2 {
+        font-size: 1.8rem;
+    }
+
+    .travel-blog-grid__share {
+        margin-left: 1.5rem;
+    }
+
+    .travel-blog-grid__comments,
+    .travel-blog-grid__likes {
+        margin-right: 1rem;
+    }
+
+    .photography-blog-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, .5fr);
+        grid-template-areas:
+            "blogph1 blogph1"
+            "blogph2 blogph3"
+            "blogph4 blogph5"
+            "blogph6 blogph7"
+            "blogph8 blogph9"
+            "blogph10 blogph11";
+        grid-column-gap: 2rem;
+    }
+
+    .photography-blog-grid__card1 {
+        grid-area: blogph1;
+    }
+
+    .photography-blog-grid__card2 {
+        grid-area: blogph2;
+    }
+
+    .photography-blog-grid__card3 {
+        grid-area: blogph3;
+    }
+
+    .photography-blog-grid__card4 {
+        grid-area: blogph4;
+    }
+
+    .photography-blog-grid__card5 {
+        grid-area: blogph5;
+    }
+
+    .photography-blog-grid__card6 {
+        grid-area: blogph6;
+    }
+
+    .photography-blog-grid__card7 {
+        grid-area: blogph7;
+    }
+
+    .photography-blog-grid__card8 {
+        grid-area: blogph8;
+    }
+
+    .photography-blog-grid__card9 {
+        grid-area: blogph9;
+    }
+
+    .photography-blog-grid__card10 {
+        grid-area: blogph10;
+    }
+
+    .photography-blog-grid__card11 {
+        grid-area: blogph11;
+    }
+
+    .photography-blog-grid__card h2 {
+        font-size: 1.8rem;
+    }
+
+    .photography-blog-grid__likes,
+    .photography-blog-grid__comments,
+    .photography-blog-grid__share {
+        margin-left: 0;
+    }
+
+    .photography-blog-grid__share {
+        margin-left: 3rem;
+    }
+
+    .photography-blog-grid__share,
+    .photography-blog-grid__comments {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .featured-portfolio {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "flower horse puppy ducks";
+    }
+
+    .btn {
+        width: 40%;
+        font-size: 1.1rem;
+    }
+
+    .home-blogs__card {
+        background-color: var(--secondary-color);
+    }
+
+    .home-blogs__card .btn {
+        width: 100%;;
+    }
+
+    .home-blogs__card img {
+        width: 100%;
+    }
+
+    .home-blogs__card p {
+        color:  var(--tertiary-color);
+
+    }
+
+    .home-blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tblog phblog";
+        grid-column-gap: 2rem;
+    }
+
+    .home-blogs__card1 {
+        grid-area: tblog;
+    }
+
+    .home-blogs__card2 {
+        grid-area: phblog;
+    }
+
+    .home-blogs__text {
+        padding: 3em;
+    }
+
+    .home-blogs__text--1 {
+        margin-top: 1.9rem;
+    }
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "phtext phportfolio"
+        "trportfolio tvtext";
+        margin: var(--outer-margin);
+        width: var(--outer-container-size);
+    }
+
+    .portfolio__text-div1 {
+        grid-area: phtext;
+    }
+
+    
+    .portfolio__text-div2 {
+        grid-area: tvtext;
+    }
+
+    .travel-portfolio-images {
+        grid-area: trportfolio;
+    }
+    
+    .stock-portfolio-images {
+        grid-area: phportfolio;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .portfolio__text-div h3 {
+        font-size: 2rem;
+    }
+
+    footer p,
+    footer ul li a {
+        font-size: 1rem;
+    }
+
+    .travel-blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "blog1 blog2 blog3"
+        "blog4 blog5 blog6"
+        "blog7 blog8 blog9"
+        "blog10 blog11 blog12";
+    }
+
+    .photography-blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "blogph2 blogph1 blogph1"
+        "blogph3 blogph4 blogph5"
+        "blogph6 blogph7 blogph8"
+        "blogph9 blogph10 blogph11";
+    }
+
+    .photography-blog-grid__card1 {
+        height: initial;
+    }
+
+    .input span {
+        right: 210px;
+    }
+}
